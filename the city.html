@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The City</title>
+    <link href="../img/favicon.ico" rel="shortcut icon"/>
     <style>
         * {
             box-sizing: border-box;
@@ -18,8 +19,93 @@
             padding: 0;
         }
 
-        p {
+        p, h1, li {
             color: rgb(75, 76, 78);
+        }
+
+        h3 {
+            color: #bed5e8;
+        }
+
+        hr {
+            border-color: #bed5e8;
+            border-style: dashed;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0 auto;
+            padding: 0 20px;
+            max-width: 1200px;
+        }
+        
+        .header {
+            background-color: #bed5e8;
+            color: rgb(75, 76, 78);
+            padding: 15px;
+            text-align: center;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 20px 0;
+        }
+
+        .table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        
+        .table th, .table td {
+            padding: 8px;
+            text-align: center;
+            background-color: #ecf0f4;
+            color: rgb(75, 76, 78);
+            border: 1px solid #ccc;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+        }
+
+        .table img {
+            width: 100px;
+            height: auto;
+            margin-top: 10px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+        }
+
+        .table a {
+            color: rgb(75, 76, 78);
+            text-decoration: none;
+            display: block;
+        }
+
+        .main-content {
+            flex: 1;
+            padding: 15px;
+        }
+
+        .main-content img {
+            width: 400px;
+            height: auto;
+            margin-top: 20px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+        }
+
+        .main-content li {
+            font-size: 18px;
+        }
+
+        .footer {
+            background-color: #ecf0f4;
+            color: rgb(75, 76, 78);
+            text-align: center;
+            font-size: 14px;
+            padding: 15px;
+            margin-top: auto;
         }
 
         /* for mobile phone: */
@@ -62,6 +148,186 @@
     </style>
 </head>
 <body>
-    <p>123121</p>
+    <div class="container">
+        <div class="header">
+            <h1>The City</h1>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <table class="table">
+                    <tr>
+                        <td><a href="#Canberra">Canberra<br/><img src="../Canberra.jpg" alt="Canberra"></a></td>
+                        <td><a href="#Sydney">Sydney<br/><img src="../Sydney.webp" alt="Sydney"></a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#Melbourne">Melbourne<br/><img src="../Melbourne.jpg" alt="Melbourne"></a></td>
+                        <td><a href="#Brisbane">Brisbane<br/><img src="../Brisbane.avif" alt="Brisbane"></a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#Perth">Perth<br/><img src="../Perth.avif" alt="Perth"></a></td>
+                        <td><a href="#Adelaide">Adelaide<br/><img src="../Adelaide.jpg" alt="Adelaide"></a></td>
+                    </tr>
+                </table>
+
+                <div class="main-content">
+                    <h1 id="Canberra">Canberra</h1>
+                    <h3>Overview of Canberra</h3>
+                    <ul>
+                        <li>Established: 1913</li>
+                        <li>Population: Approximately 400,000</li>
+                        <li>Features: As the political center of Australia, Canberra is home to many government institutions, embassies, and national cultural institutions.</li>
+                    </ul>
+                    <h3>Main Attractions and Activities</h3>
+                    <ol>
+                        <li>Parliament House</li>
+                        <img src="../Parliament House.jpg">
+                        <li>Australian War Memorial</li>
+                        <img src="../Australian War Memorial.jpg">
+                        <li>National Gallery of Australia</li>
+                        <img src="../National Gallery of Australia.jpg">
+                        <li>National Museum of Australia</li>
+                        <img src="../National Museum of Australia.jpg">
+                        <li>National Library of Australia</li>
+                        <img src="../National Library of Australia.jpg">
+                    </ol>
+
+                    <hr/>
+
+                    <h1 id="Sydney">Sydney</h1>
+                    <h3>Overview of Canberra</h3>
+                    <ul>
+                        <li>Established: 1788</li>
+                        <li>Population: Approximately 5,200,000</li>
+                        <li>Features: Sydney is Australia's largest city, known for its iconic Sydney Opera House and Sydney Harbour Bridge.
+                            <br/>
+                            It is also a major financial and cultural center, featuring numerous museums, theaters, and restaurants, as well as beautiful beaches like Bondi Beach.
+                        </li>
+                    </ul>
+                    <h3>Main Attractions and Activities</h3>
+                    <ol>
+                        <li>Sydney Opera House</li>
+                        <img src="../Sydney Opera House.jpg">
+                        <li>Sydney Harbour Bridge</li>
+                        <img src="../Sydney Harbour Bridge.jpg">
+                        <li>Bondi Beach</li>
+                        <img src="../Bondi Beach.avif">
+                        <li>Darling Harbour</li>
+                        <img src="../Darling Harbour.jpg">
+                        <li>Royal Botanic Garden</li>
+                        <img src="../Royal Botanic Garden.jpg">
+                    </ol>
+
+                    <hr/>
+
+                    <h1 id="Melbourne">Melbourne</h1>
+                    <h3>Overview of Canberra</h3>
+                    <ul>
+                        <li>Established: 1835</li>
+                        <li>Population: Approximately 5,000,000</li>
+                        <li>Features: Melbourne is known for its multicultural and artistic vibe, with a rich food scene, coffee culture, and street art.
+                            <br/>
+                            It also hosts numerous international events and festivals, such as the Australian Open and the Melbourne International Film Festival.
+                        </li>
+                    </ul>
+                    <h3>Main Attractions and Activities</h3>
+                    <ol>
+                        <li>Fitzroy Gardens</li>
+                        <img src="../Fitzroy Gardens.jpg">
+                        <li>National Gallery of Victoria</li>
+                        <img src="../National Gallery of Victoria.webp">
+                        <li>St Kilda Beach</li>
+                        <img src="../St Kilda Beach.png">
+                        <li>Melbourne Zoo</li>
+                        <img src="../Melbourne Zoo.jpg">
+                        <li>Queen Victoria Market</li>
+                        <img src="../Queen Victoria Market.jpg">
+                    </ol>
+
+                    <hr/>
+
+                    <h1 id="Brisbane">Brisbane</h1>
+                    <h3>Overview of Canberra</h3>
+                    <ul>
+                        <li>Established: 1824</li>
+                        <li>Population: Approximately 2,500,000</li>
+                        <li>Features: Brisbane is the capital of Queensland, featuring a warm climate and a laid-back lifestyle.
+                            <br/>
+                            The city is known for attractions such as South Bank Parklands, Lone Pine Koala Sanctuary, and the Brisbane River, and serves as a gateway to the Great Barrier Reef and the Gold Coast.
+                        </li>
+                    </ul>
+                    <h3>Main Attractions and Activities</h3>
+                    <ol>
+                        <li>South Bank Parklands</li>
+                        <img src="../South Bank Parklands.jpeg">
+                        <li>Lone Pine Koala Sanctuary</li>
+                        <img src="../Lone Pine Koala Sanctuary.jpg">
+                        <li>Brisbane River</li>
+                        <img src="../Brisbane River.jpg">
+                        <li>Story Bridge</li>
+                        <img src="../Story Bridge.jpg">
+                        <li>Queensland Gallery of Modern Art(QAGOMA)</li>
+                        <img src="../Queensland Gallery of Modern Art.jpg">
+                    </ol>
+
+                    <hr/>
+
+                    <h1 id="Perth">Perth</h1>
+                    <h3>Overview of Canberra</h3>
+                    <ul>
+                        <li>Established: 1829</li>
+                        <li>Population: Approximately 2,100,000</li>
+                        <li>Features: Perth is the capital of Western Australia, known for its beautiful beaches and vast natural landscapes.Major attractions include Kings Park, Rottnest Island, and the Swan River.
+                            <br/>
+                            The city is also renowned for its sunny weather and abundant outdoor activities.
+                        </li>
+                    </ul>
+                    <h3>Main Attractions and Activities</h3>
+                    <ol>
+                        <li>Kings Park</li>
+                        <img src="../Kings Park.jpg">
+                        <li>Swan River</li>
+                        <img src="../Swan River.jpg">
+                        <li>Rottnest Island</li>
+                        <img src="../Rottnest Island.jpg">
+                        <li>Cottesloe Beach</li>
+                        <img src="../Cottesloe Beach.jpg">
+                        <li>Fremantle</li>
+                        <img src="../Fremantle.jpg">
+                    </ol>
+
+                    <hr/>
+
+                    <h1 id="Adelaide">Adelaide</h1>
+                    <h3>Overview of Canberra</h3>
+                    <ul>
+                        <li>Established: 1836</li>
+                        <li>Population: Approximately 1,400,000</li>
+                        <li>Features: Adelaide is the capital of South Australia, famous for its wine, food, and cultural activities.
+                            <br/>
+                            The city boasts rich wine regions like the Barossa Valley and hosts major cultural events such as the Adelaide Festival and Adelaide Fringe Festival every year.
+                        </li>
+                    </ul>
+                    <h3>Main Attractions and Activities</h3>
+                    <ol>
+                        <li>Adelaide Central Market</li>
+                        <img src="../Adelaide Central Market.jpg">
+                        <li>North Terrace</li>
+                        <img src="../North Terrace.jpg">
+                        <li>Glenelg Beach</li>
+                        <img src="../Glenelg Beach.jpg">
+                        <li>Adelaide Zoo</li>
+                        <img src="../Adelaide Zoo.jpg">
+                        <li>Barossa Valley</li>
+                        <img src="../Barossa Valley.webp">
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>There are many interesting cities in Australia, not all of which are listed here, and these cities also have more interesting attractions waiting for you to explore!</p>
+        </div>
+    </div>
 </body>
 </html>

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Flag</title>
+    <link href="../img/favicon.ico" rel="shortcut icon"/>
     <style>
         * {
             box-sizing: border-box;
@@ -18,8 +19,62 @@
             padding: 0;
         }
 
-        p {
+        p, h1 {
             color: rgb(75, 76, 78);
+        }
+
+        h3 {
+            color: #bed5e8;
+        }
+
+        hr {
+            border-color: #bed5e8;
+            border-style: dashed;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0 auto;
+            padding: 0 20px;
+            max-width: 1200px;
+        }
+        
+        .header {
+            background-color: #bed5e8;
+            color: rgb(75, 76, 78);
+            padding: 15px;
+            text-align: center;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 20px 0;
+        }
+
+        .main-content {
+            flex: 1;
+            padding: 15px;
+        }
+
+        .main-content img {
+            width: 300px;
+            height: auto;
+            float: right;
+            margin:0 0 20px 20px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+        }
+
+        .footer {
+            background-color: #ecf0f4;
+            color: rgb(75, 76, 78);
+            text-align: center;
+            font-size: 14px;
+            padding: 15px;
+            margin-top: auto;
         }
 
         /* for mobile phone: */
@@ -61,6 +116,100 @@
     </style>
 </head>
 <body>
-    <p>The Flag</p>
+    <div class="container">
+        <div class="header">
+            <h1>The Flag</h1>
+        </div>
+
+        <div class="row">
+            <div class="col-7 col-s-8 main-content">
+                <h1>The origin of the national flag</h1>
+                <img src="../澳洲國旗.jpg" alt="Australia Flag">
+                <h3>1. Union Jack (Union Flag) Crossed Blue Cross:</h3>
+                <p>
+                    The Union Jack on the Australian flag represents the historical and colonial ties with Britain.
+                    <br/>
+                    This part, often referred to as the Union Flag, signifies Australia's connection as part of the British Commonwealth.
+                </p>
+                <h3>2. Southern Cross:</h3>
+                <p>
+                    In the top left corner of the flag (when hoisted), there is a white representation of the Southern Cross constellation, consisting of four seven-pointed stars, symbolizing the stars of the southern hemisphere. 
+                    This symbolizes Australia's location in the southern hemisphere.
+                </p>
+
+                <h3>3. Federation star:</h3>
+                <p>
+                    In the bottom left corner of the flag (when hoisted), there is a seven-pointed star representing the six states and two territories that collectively form the federation of Australia. This star, commonly known as the Federation Star, symbolizes the national unity of Australia.
+                    <br/>
+                    The design of the Australian flag was determined through an open design competition. On April 29, 1901, the Australian government announced a public competition to design the Australian flag, and from over 30,000 entries, five finalists were selected. One of them was the design by Ivor Evans, which eventually became Australia's flag.
+                    <br/>
+                    Thus, the Australian flag consists of symbols representing its historical ties with Britain, its geographical location, and its political federation, embodying Australia's history, geography, and politics.
+                </p>
+
+                <hr/>
+
+                <h1>The Australian Aboriginal Flag</h1>
+                <img src="../Australian_Aboriginal_Flag.svg.png">
+                <p>
+                    The Australian Aboriginal Flag was designed in 1971 by Aboriginal artist Harold Thomas, a descendant of the Luritja people from Central Australia.
+                    <br/> 
+                    He holds the intellectual property rights to the flag's design. The flag was originally designed for the land rights movement and has become a symbol of the Australian Aboriginal people.
+                </p>
+
+                <h3>Black:</h3>
+                <p>Representing Australian Aboriginals.</p>
+
+                <h3>Yellow circle:</h3>
+                <p>Representing the sun, the giver and protector of life.</p>
+
+                <h3>Rad:</h3>
+                <p>Representing red earth, red ocher used in ceremonies and Aboriginal spiritual relationships with the land.</p>
+
+                <hr/>
+
+                <h1>Torres Strait Islander flag</h1>
+                <img src="../托里斯海峡岛民旗子.webp">
+                <p>
+                    The Torres Strait Islander flag is one of the official flags of Australia and is the flag representing the Torres Strait Islander people. 
+                    <br/>
+                    It was designed by Bernard Namoc in 1992. It won a local competition held by the Island Coordinating Committee and was recognized by the Aboriginal and Torres Strait Islander Council in June 1992.
+                </p>
+                <h3>Green:</h3>
+                <p>Representing the land.</p>
+
+                <h3>Blue:</h3>
+                <p>Representing Torres Strait.</p>
+
+                <h3>Black:</h3>
+                <p>Representing Torres Strait Islanders.</p>
+
+                <h3>White:</h3>
+                <p>
+                    There is a five-pointed star and the local traditional dance headdress Dhari (also called dari). 
+                    The five-pointed star symbolizes the five major island groups of the islanders (eastern, western, central, Port Kennedy, and the main island) and also has navigational significance.
+                </p>
+
+                <hr/>
+
+                <h1>Western Australia state flag</h1>
+                <img src="../Flag_of_Western_Australia.svg">
+                <p>
+                    With a Blue Ensign as the base, the right side of the flag features a yellow circle containing a black swan motif. 
+                    The current version was adopted on November 3, 1953, and is similar to the flag used when the state was still a British colony. 
+                </p>
+                <p>
+                    From 1870 to 1953, the black swan motif on the Western Australia state flag faced the opposite direction to the current design. 
+                    The current design aligns with vexillological convention, making the swan face the "hoist." 
+                    The state flag of Western Australia is similar to the flags of the other five states of the Australian Federation, being a Blue Ensign with the state's emblem.
+                </p>
+            </div>
+        </div>
+
+        <div>
+            <div class="footer">
+                <p>There are many flags in Australia. Historical reasons have led to the emergence of these flags. Their many meanings are worth exploring. The above are the main flags.</p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
